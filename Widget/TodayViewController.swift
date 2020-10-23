@@ -16,16 +16,17 @@ struct Time {
 
 class TodayViewController: UIViewController, NCWidgetProviding
 {
+    let prefs = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
+    
     @IBOutlet weak var label: UILabel!
     
-    override func viewDidLoad() {
+    /// Initialize
+    override func viewDidLoad()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
-        label.text = UserDefaults(suiteName: "group.org.hydev.zoomlink")!.string(forKey: "calendar-url")
     }
-        
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
+    
         // Perform any setup necessary in order to update the view.
         
         // If an error is encountered, use NCUpdateResult.Failed
