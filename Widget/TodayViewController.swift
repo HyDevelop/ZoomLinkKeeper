@@ -35,6 +35,10 @@ class TodayViewController: UIViewController, NCWidgetProviding
     
     let periodTimes = [Time(8,20), Time(9,30), Time(10,35), Time(12,29), Time(13,34)]
     
+    /// Today's date and day in the schedule rotation
+    var todaysDate: String = ""
+    var day: Int = 0
+    
     /// Initialize
     override func viewDidLoad()
     {
