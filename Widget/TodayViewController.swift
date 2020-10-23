@@ -9,9 +9,16 @@ import UIKit
 import NotificationCenter
 
 // Time - Such as 8:20
-struct Time {
+class Time
+{
     let hour: Int
     let minutes: Int
+    
+    init(_ h: Int, _ m: Int)
+    {
+        hour = h
+        minutes = m
+    }
 }
 
 class TodayViewController: UIViewController, NCWidgetProviding
