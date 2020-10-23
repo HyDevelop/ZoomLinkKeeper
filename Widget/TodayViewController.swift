@@ -27,6 +27,8 @@ class TodayViewController: UIViewController, NCWidgetProviding
     
     @IBOutlet weak var label: UILabel!
     
+    let periodTimes = [Time(8,20), Time(9,30), Time(10,35), Time(12,29), Time(13,34)]
+    
     /// Initialize
     override func viewDidLoad()
     {
