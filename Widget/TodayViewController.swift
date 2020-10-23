@@ -45,17 +45,29 @@ class TodayViewController: UIViewController, NCWidgetProviding
         super.viewDidLoad()
     }
     
-    /// Update
+    /// Perform any setup necessary in order to update the view.
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void))
     {
-        // Perform any setup necessary in order to update the view.
-        
-        label.text = prefs.string(forKey: "calendar-url")
+        // If the day haven't updated in a day yet
+        if (todaysDate != getTodayDate())
+        {
+            getHttp()
+        }
+        else
+        {
+            update()
+        }
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         completionHandler(NCUpdateResult.newData)
+    }
+    
+    /// Update within a day
+    func update()
+    {
+        
     }
     
     /// Get the string of today's date
@@ -83,6 +95,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
             // Update the variables
             self.todaysDate = self.getTodayDate();
             self.day = Int(html[Range(match.range, in: html)!])! // TODO: Handle errors
+            self.update()
         }
         
         // Actually start the call
