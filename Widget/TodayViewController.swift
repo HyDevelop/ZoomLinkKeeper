@@ -22,12 +22,16 @@ class TodayViewController: UIViewController, NCWidgetProviding
     
     /// Initialize
     override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    
     }
     
+    /// Update
+    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void))
+    {
         // Perform any setup necessary in order to update the view.
+        
+        label.text = prefs.string(forKey: "calendar-url")
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
