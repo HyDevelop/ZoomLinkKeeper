@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F31607725431DB8007FFCF0 /* MyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31607625431DB8007FFCF0 /* MyConstants.swift */; };
 		4FC377792541F86600B6C64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC377782541F86600B6C64B /* AppDelegate.swift */; };
 		4FC3777B2541F86600B6C64B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777A2541F86600B6C64B /* SceneDelegate.swift */; };
-		4FC3777D2541F86600B6C64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777C2541F86600B6C64B /* ViewController.swift */; };
+		4FC3777D2541F86600B6C64B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777C2541F86600B6C64B /* MoreViewController.swift */; };
 		4FC377802541F86600B6C64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC3777E2541F86600B6C64B /* Main.storyboard */; };
 		4FC377822541F86800B6C64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC377812541F86800B6C64B /* Assets.xcassets */; };
 		4FC377852541F86800B6C64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC377832541F86800B6C64B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F31607625431DB8007FFCF0 /* MyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConstants.swift; sourceTree = "<group>"; };
 		4FC377752541F86600B6C64B /* ZoomLinkKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomLinkKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC377782541F86600B6C64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC3777A2541F86600B6C64B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FC3777C2541F86600B6C64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FC3777C2541F86600B6C64B /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		4FC3777F2541F86600B6C64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FC377812541F86800B6C64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FC377842541F86800B6C64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			children = (
 				4FC377782541F86600B6C64B /* AppDelegate.swift */,
 				4FC3777A2541F86600B6C64B /* SceneDelegate.swift */,
-				4FC3777C2541F86600B6C64B /* ViewController.swift */,
+				4FC3777C2541F86600B6C64B /* MoreViewController.swift */,
+				4F31607625431DB8007FFCF0 /* MyConstants.swift */,
 				4FC3777E2541F86600B6C64B /* Main.storyboard */,
 				4FC377812541F86800B6C64B /* Assets.xcassets */,
 				4FC377832541F86800B6C64B /* LaunchScreen.storyboard */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC3777D2541F86600B6C64B /* ViewController.swift in Sources */,
+				4FC3777D2541F86600B6C64B /* MoreViewController.swift in Sources */,
 				4FC377792541F86600B6C64B /* AppDelegate.swift in Sources */,
 				4FC3777B2541F86600B6C64B /* SceneDelegate.swift in Sources */,
+				4F31607725431DB8007FFCF0 /* MyConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJNC9EQDFU;
 				INFOPLIST_FILE = ZoomLinkKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.ZoomLinkKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJNC9EQDFU;
 				INFOPLIST_FILE = ZoomLinkKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.ZoomLinkKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
