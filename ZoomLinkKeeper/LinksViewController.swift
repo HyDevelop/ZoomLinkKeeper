@@ -10,4 +10,16 @@ import UIKit
 class LinksViewController: UIViewController
 {
     @IBOutlet var table: UITableView!
+    class MyDataSource: NSObject, UITableViewDataSource
+    {
+        /// How many items are in the table
+        func tableView(_ v: UITableView, numberOfRowsInSection rows: Int) -> Int
+        {
+        }
+        
+        func tableView(_ v: UITableView, cellForRowAt i: IndexPath) -> UITableViewCell
+        {
+            
+        }
+    }
 }
