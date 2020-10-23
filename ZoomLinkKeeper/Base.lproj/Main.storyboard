@@ -23,36 +23,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPD-pK-ENw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="79" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPD-pK-ENw">
                                 <rect key="frame" x="20" y="69" width="984" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="blockLinkConfig" rowHeight="100" id="bi0-ax-5CZ" customClass="LinkTableCell" customModule="ZoomLinkKeeper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="984" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="blockLinkConfig" rowHeight="79" id="bi0-ax-5CZ" customClass="LinkTableCell" customModule="ZoomLinkKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="984" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bi0-ax-5CZ" id="EXi-Lt-gc8">
-                                            <rect key="frame" x="0.0" y="0.0" width="984" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiX-lu-1lN">
-                                                    <rect key="frame" x="16" y="11" width="952" height="21"/>
+                                                    <rect key="frame" x="0.0" y="10" width="984" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDP-pj-d3p">
-                                                    <rect key="frame" x="16" y="40" width="952" height="34"/>
+                                                    <rect key="frame" x="0.0" y="39" width="984" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dDP-pj-d3p" firstAttribute="top" secondItem="BiX-lu-1lN" secondAttribute="bottom" constant="8" symbolic="YES" id="1h3-Ef-HVf"/>
-                                                <constraint firstItem="BiX-lu-1lN" firstAttribute="top" secondItem="EXi-Lt-gc8" secondAttribute="topMargin" id="Lyd-wM-o3D"/>
-                                                <constraint firstItem="BiX-lu-1lN" firstAttribute="leading" secondItem="EXi-Lt-gc8" secondAttribute="leadingMargin" id="O9D-D7-uVP"/>
-                                                <constraint firstItem="dDP-pj-d3p" firstAttribute="leading" secondItem="EXi-Lt-gc8" secondAttribute="leadingMargin" id="TEm-rd-Icm"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="dDP-pj-d3p" secondAttribute="trailing" id="UWz-xo-F0r"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="BiX-lu-1lN" secondAttribute="trailing" id="gZS-FL-8of"/>
+                                                <constraint firstAttribute="trailing" secondItem="dDP-pj-d3p" secondAttribute="trailing" id="3ZY-oO-5cz"/>
+                                                <constraint firstAttribute="trailing" secondItem="BiX-lu-1lN" secondAttribute="trailing" id="Ks3-ML-emx"/>
+                                                <constraint firstItem="dDP-pj-d3p" firstAttribute="top" secondItem="BiX-lu-1lN" secondAttribute="bottom" constant="8" symbolic="YES" id="aD4-0h-mEK"/>
+                                                <constraint firstItem="dDP-pj-d3p" firstAttribute="leading" secondItem="EXi-Lt-gc8" secondAttribute="leading" id="bST-J5-7qu"/>
+                                                <constraint firstItem="BiX-lu-1lN" firstAttribute="top" secondItem="EXi-Lt-gc8" secondAttribute="top" constant="10" id="if7-1k-U57"/>
+                                                <constraint firstItem="BiX-lu-1lN" firstAttribute="leading" secondItem="EXi-Lt-gc8" secondAttribute="leading" id="kEE-Eh-geA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
