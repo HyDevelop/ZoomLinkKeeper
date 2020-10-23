@@ -9,7 +9,7 @@ import UIKit
 
 class MoreViewController: UIViewController
 {
-    let userDefaults = UserDefaults.standard
+    let userDefaults = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
     
     @IBOutlet weak var calendarUrl: UITextField!
     @IBOutlet weak var regex: UITextField!

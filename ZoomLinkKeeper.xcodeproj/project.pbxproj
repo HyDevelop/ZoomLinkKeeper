@@ -10,6 +10,10 @@
 		4F31607725431DB8007FFCF0 /* MyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31607625431DB8007FFCF0 /* MyConstants.swift */; };
 		4F31607F254339C2007FFCF0 /* LinkTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31607E254339C2007FFCF0 /* LinkTableCell.swift */; };
 		4F31608D254345F2007FFCF0 /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31608C254345F2007FFCF0 /* LinksViewController.swift */; };
+		4F394F6125436D3F0038C6A3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F394F6025436D3F0038C6A3 /* NotificationCenter.framework */; };
+		4F394F6425436D3F0038C6A3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F394F6325436D3F0038C6A3 /* TodayViewController.swift */; };
+		4F394F6725436D3F0038C6A3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F394F6525436D3F0038C6A3 /* MainInterface.storyboard */; };
+		4F394F6B25436D3F0038C6A3 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F394F5E25436D3F0038C6A3 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4FC377792541F86600B6C64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC377782541F86600B6C64B /* AppDelegate.swift */; };
 		4FC3777B2541F86600B6C64B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777A2541F86600B6C64B /* SceneDelegate.swift */; };
 		4FC3777D2541F86600B6C64B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777C2541F86600B6C64B /* MoreViewController.swift */; };
@@ -18,10 +22,41 @@
 		4FC377852541F86800B6C64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC377832541F86800B6C64B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4F394F6925436D3F0038C6A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FC3776D2541F86600B6C64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F394F5D25436D3F0038C6A3;
+			remoteInfo = Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F394F6C25436D3F0038C6A3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4F394F6B25436D3F0038C6A3 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4F31607625431DB8007FFCF0 /* MyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConstants.swift; sourceTree = "<group>"; };
 		4F31607E254339C2007FFCF0 /* LinkTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableCell.swift; sourceTree = "<group>"; };
 		4F31608C254345F2007FFCF0 /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
+		4F3160C2254378F2007FFCF0 /* ZoomLinkKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomLinkKeeper.entitlements; sourceTree = "<group>"; };
+		4F3160CB25437C4B007FFCF0 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		4F394F5E25436D3F0038C6A3 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F394F6025436D3F0038C6A3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4F394F6325436D3F0038C6A3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4F394F6625436D3F0038C6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4F394F6825436D3F0038C6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC377752541F86600B6C64B /* ZoomLinkKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomLinkKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC377782541F86600B6C64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC3777A2541F86600B6C64B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +68,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F394F5B25436D3F0038C6A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F394F6125436D3F0038C6A3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FC377722541F86600B6C64B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F394F5F25436D3F0038C6A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F394F6025436D3F0038C6A3 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F394F6225436D3F0038C6A3 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4F3160CB25437C4B007FFCF0 /* Widget.entitlements */,
+				4F394F6325436D3F0038C6A3 /* TodayViewController.swift */,
+				4F394F6525436D3F0038C6A3 /* MainInterface.storyboard */,
+				4F394F6825436D3F0038C6A3 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		4FC3776C2541F86600B6C64B = {
 			isa = PBXGroup;
 			children = (
 				4FC377772541F86600B6C64B /* ZoomLinkKeeper */,
+				4F394F6225436D3F0038C6A3 /* Widget */,
+				4F394F5F25436D3F0038C6A3 /* Frameworks */,
 				4FC377762541F86600B6C64B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				4FC377752541F86600B6C64B /* ZoomLinkKeeper.app */,
+				4F394F5E25436D3F0038C6A3 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +127,7 @@
 		4FC377772541F86600B6C64B /* ZoomLinkKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				4F3160C2254378F2007FFCF0 /* ZoomLinkKeeper.entitlements */,
 				4FC377782541F86600B6C64B /* AppDelegate.swift */,
 				4FC3777A2541F86600B6C64B /* SceneDelegate.swift */,
 				4FC3777C2541F86600B6C64B /* MoreViewController.swift */,
@@ -79,6 +145,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4F394F5D25436D3F0038C6A3 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F394F6F25436D3F0038C6A3 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				4F394F5A25436D3F0038C6A3 /* Sources */,
+				4F394F5B25436D3F0038C6A3 /* Frameworks */,
+				4F394F5C25436D3F0038C6A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 4F394F5E25436D3F0038C6A3 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4FC377742541F86600B6C64B /* ZoomLinkKeeper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FC377892541F86800B6C64B /* Build configuration list for PBXNativeTarget "ZoomLinkKeeper" */;
@@ -86,10 +169,12 @@
 				4FC377712541F86600B6C64B /* Sources */,
 				4FC377722541F86600B6C64B /* Frameworks */,
 				4FC377732541F86600B6C64B /* Resources */,
+				4F394F6C25436D3F0038C6A3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F394F6A25436D3F0038C6A3 /* PBXTargetDependency */,
 			);
 			name = ZoomLinkKeeper;
 			productName = ZoomLinkKeeper;
@@ -102,9 +187,12 @@
 		4FC3776D2541F86600B6C64B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					4F394F5D25436D3F0038C6A3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					4FC377742541F86600B6C64B = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -124,11 +212,20 @@
 			projectRoot = "";
 			targets = (
 				4FC377742541F86600B6C64B /* ZoomLinkKeeper */,
+				4F394F5D25436D3F0038C6A3 /* Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F394F5C25436D3F0038C6A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F394F6725436D3F0038C6A3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FC377732541F86600B6C64B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +239,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4F394F5A25436D3F0038C6A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F394F6425436D3F0038C6A3 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FC377712541F86600B6C64B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,7 +262,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4F394F6A25436D3F0038C6A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F394F5D25436D3F0038C6A3 /* Widget */;
+			targetProxy = 4F394F6925436D3F0038C6A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		4F394F6525436D3F0038C6A3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F394F6625436D3F0038C6A3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		4FC3777E2541F86600B6C64B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -177,6 +298,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4F394F6D25436D3F0038C6A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJNC9EQDFU;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F394F6E25436D3F0038C6A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJNC9EQDFU;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4FC377872541F86800B6C64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -283,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,8 +459,10 @@
 		4FC3778A2541F86800B6C64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomLinkKeeper/ZoomLinkKeeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJNC9EQDFU;
 				INFOPLIST_FILE = ZoomLinkKeeper/Info.plist;
@@ -306,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.ZoomLinkKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -316,8 +481,10 @@
 		4FC3778B2541F86800B6C64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomLinkKeeper/ZoomLinkKeeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJNC9EQDFU;
 				INFOPLIST_FILE = ZoomLinkKeeper/Info.plist;
@@ -326,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.ZoomLinkKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -336,6 +503,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4F394F6F25436D3F0038C6A3 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F394F6D25436D3F0038C6A3 /* Debug */,
+				4F394F6E25436D3F0038C6A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4FC377702541F86600B6C64B /* Build configuration list for PBXProject "ZoomLinkKeeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

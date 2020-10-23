@@ -14,6 +14,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+        label.text = UserDefaults(suiteName: "group.org.hydev.zoomlink")!.string(forKey: "calendar-url")
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {

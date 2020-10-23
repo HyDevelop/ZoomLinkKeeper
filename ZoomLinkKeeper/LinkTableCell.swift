@@ -14,6 +14,6 @@ class LinkTableCell: UITableViewCell
     
     @IBAction func saveInput(_ sender: Any)
     {
-        UserDefaults.standard.setValue(input.text, forKey: label.text!)
+        UserDefaults(suiteName: "org.hydev.ZoomLinkKeeper")!.setValue(input.text, forKey: label.text!)
     }
 }
