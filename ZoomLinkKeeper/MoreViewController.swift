@@ -13,4 +13,16 @@ class MoreViewController: UIViewController
     
     @IBOutlet weak var calendarUrl: UITextField!
     @IBOutlet weak var regex: UITextField!
+    
+    /**
+     * View loaded (setup)
+     */
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        // Load settings
+        calendarUrl.text = userDefaults.string(forKey: "calendar-url");
+        regex.text       = userDefaults.string(forKey: "regex");
+    }
 }
