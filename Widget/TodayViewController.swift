@@ -38,6 +38,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
     /// Today's date and day in the schedule rotation
     var todaysDate: String = ""
     var day: Int = 0
+    var blocks: [String] = []
     
     /// Initialize
     override func viewDidLoad()
@@ -81,24 +82,38 @@ class TodayViewController: UIViewController, NCWidgetProviding
     /// Get today's schedule rotation day from Http
     func getHttp()
     {
-        let url = URL(string: prefs.string(forKey: "calendar-url")!)!
-        let regex = try! NSRegularExpression(pattern: prefs.string(forKey: "regex")!)
-        
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            // Valid data
-            guard let data = data else { return }
-            let html = String(data: data, encoding: .utf8)!
-            
-            // Match regex through all characters
-            let match = regex.firstMatch(in: html, options: [], range: NSRange(location: 0, length: html.utf16.count))!
-           
-            // Update the variables
-            self.todaysDate = self.getTodayDate();
-            self.day = Int(html[Range(match.range, in: html)!])! // TODO: Handle errors
-            self.update()
+        if let url = URL(string: prefs.string(forKey: "calendar-url") ?? "")
+        {
+            do
+            {
+                let regex = try NSRegularExpression(pattern: prefs.string(forKey: "regex")!)
+                
+                let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                    // Valid data
+                    guard let data = data else { return }
+                    let html = String(data: data, encoding: .utf8)!
+                    
+                    // Match regex through all characters
+                    let match = regex.firstMatch(in: html, options: [], range: NSRange(location: 0, length: html.utf16.count))!
+                   
+                    // Update the variables
+                    self.todaysDate = self.getTodayDate();
+                    
+                    // Update view
+                    self.update()
+                }
+                
+                // Actually start the call
+                task.resume()
+            }
+            catch
+            {
+                fatalError("Regex is nil")
+            }
         }
-        
-        // Actually start the call
-        task.resume()
+        else
+        {
+            fatalError("URL is nil")
+        }
     }
 }
