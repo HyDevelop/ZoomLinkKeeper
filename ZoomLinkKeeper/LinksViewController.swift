@@ -15,6 +15,7 @@ class LinksViewController: UIViewController
         /// How many items are in the table
         func tableView(_ v: UITableView, numberOfRowsInSection rows: Int) -> Int
         {
+            return 7
         }
         
         func tableView(_ v: UITableView, cellForRowAt i: IndexPath) -> UITableViewCell
