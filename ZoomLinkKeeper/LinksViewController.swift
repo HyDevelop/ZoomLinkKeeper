@@ -20,7 +20,12 @@ class LinksViewController: UIViewController
         
         func tableView(_ v: UITableView, cellForRowAt i: IndexPath) -> UITableViewCell
         {
+            guard let cell = v.dequeueReusableCell(withIdentifier: "blockLinkConfig", for: i) as? LinkTableCell
+            else {
+                fatalError("The dequeued cell is not an instance of LinkTableCell.")
+            }
             
+            return cell;
         }
     }
 }
