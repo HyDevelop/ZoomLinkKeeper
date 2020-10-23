@@ -47,4 +47,12 @@ class TodayViewController: UIViewController, NCWidgetProviding
         // If there's an update, use NCUpdateResult.NewData
         completionHandler(NCUpdateResult.newData)
     }
+    
+    /// Get the string of today's date
+    func getTodayDate() -> String
+    {
+        let f = DateFormatter()
+        f.dateFormat = "yyyy-MM-dd"
+        return f.string(from: Date())
+    }
 }
