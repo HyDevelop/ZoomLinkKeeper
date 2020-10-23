@@ -25,6 +25,8 @@ class LinksViewController: UIViewController
                 fatalError("The dequeued cell is not an instance of LinkTableCell.")
             }
             
+            cell.label.text = String(Character(UnicodeScalar(i.item + 65)!)) + " Block"
+            
             return cell;
         }
     }
