@@ -19,6 +19,12 @@ class Time
         hour = h
         minutes = m
     }
+    
+    init()
+    {
+        hour = Calendar.current.component(.hour, from: Date())
+        minutes = Calendar.current.component(.minute, from: Date())
+    }
 }
 
 class TodayViewController: UIViewController, NCWidgetProviding
