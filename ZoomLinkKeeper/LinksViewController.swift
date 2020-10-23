@@ -10,6 +10,17 @@ import UIKit
 class LinksViewController: UIViewController
 {
     @IBOutlet var table: UITableView!
+    @IBOutlet var dataSource: UITableViewDataSource!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+
+        // Initialize table
+        dataSource = MyDataSource()
+        table.dataSource = dataSource
+    }
+    
     class MyDataSource: NSObject, UITableViewDataSource
     {
         /// How many items are in the table
