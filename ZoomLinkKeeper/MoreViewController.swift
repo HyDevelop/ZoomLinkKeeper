@@ -25,4 +25,16 @@ class MoreViewController: UIViewController
         calendarUrl.text = userDefaults.string(forKey: "calendar-url");
         regex.text       = userDefaults.string(forKey: "regex");
     }
+    
+    /// Reset data fields
+    @IBAction func resetCalendarUrl(_ sender: Any)
+    {
+        calendarUrl.text = MyConstants.defaultCalendarUrl
+        saveSettings(sender)
+    }
+    @IBAction func resetRegex(_ sender: Any)
+    {
+        regex.text = MyConstants.defaultRegex
+        saveSettings(sender)
+    }
 }
