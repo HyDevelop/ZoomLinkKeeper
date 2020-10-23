@@ -44,6 +44,9 @@
                                                     <rect key="frame" x="0.0" y="39" width="984" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="saveInput:" destination="bi0-ax-5CZ" eventType="editingDidEnd" id="elq-MC-2KJ"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>

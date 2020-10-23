@@ -11,4 +11,9 @@ class LinkTableCell: UITableViewCell
 {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var input: UITextField!
+    
+    @IBAction func saveInput(_ sender: Any)
+    {
+        UserDefaults.standard.setValue(input.text, forKey: label.text!)
+    }
 }
