@@ -8,7 +8,14 @@
 import UIKit
 import NotificationCenter
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+// Time - Such as 8:20
+struct Time {
+    let hour: Int
+    let minutes: Int
+}
+
+class TodayViewController: UIViewController, NCWidgetProviding
+{
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
