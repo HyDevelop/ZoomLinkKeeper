@@ -97,12 +97,20 @@ class TodayViewController: UIViewController, NCWidgetProviding
             currentBlockTime.text = "-"
             currentBlockButton.isEnabled = false
         }
+        else
+        {
+            assignBlock(block, currentBlockLabel, currentBlockTime, currentBlockButton, "Current Block: ")
+        }
         
         if (block == 4)
         {
             nextBlockLabel.text = "School Ended"
             nextBlockTime.text = "-"
             nextBlockButton.isEnabled = false
+        }
+        else
+        {
+            assignBlock(block, nextBlockLabel, nextBlockTime, nextBlockButton, "Next Block: ")
         }
     }
     
