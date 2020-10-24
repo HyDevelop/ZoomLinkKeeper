@@ -25,6 +25,11 @@ class Time
         hour = Calendar.current.component(.hour, from: Date())
         minutes = Calendar.current.component(.minute, from: Date())
     }
+    
+    static func >(a: Time, b: Time) -> Bool
+    {
+        return a.hour > b.hour || (a.hour == b.hour && a.minutes > b.minutes)
+    }
 }
 
 class TodayViewController: UIViewController, NCWidgetProviding
