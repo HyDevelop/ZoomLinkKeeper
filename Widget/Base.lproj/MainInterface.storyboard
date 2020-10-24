@@ -46,10 +46,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Open Zoom"/>
+                                        <connections>
+                                            <action selector="currentBlockClick:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="JLg-A3-nmD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMX-iD-I1z">
                                         <rect key="frame" x="160" y="0.0" width="160" height="30"/>
                                         <state key="normal" title="Open Zoom"/>
+                                        <connections>
+                                            <action selector="nextBlockClick:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="p5a-1B-Z9K"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

@@ -66,6 +66,16 @@ class TodayViewController: UIViewController, NCWidgetProviding
         super.viewDidLoad()
     }
     
+    @IBAction func currentBlockClick(_ sender: Any)
+    {
+        
+    }
+    
+    @IBAction func nextBlockClick(_ sender: Any)
+    {
+        
+    }
+    
     /// Perform any setup necessary in order to update the view.
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void))
     {
