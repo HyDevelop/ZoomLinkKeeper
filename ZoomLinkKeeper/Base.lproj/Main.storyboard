@@ -140,26 +140,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-Mm-5F6">
-                                <rect key="frame" x="20" y="109.5" width="984" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Advanced Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-Mm-5F6">
+                                <rect key="frame" x="20" y="150" width="984" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an app to keep your Zoom links and automatically displays the links of the two current periods" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-t3-SUz">
-                                <rect key="frame" x="20" y="69" width="984" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-t3-SUz">
+                                <rect key="frame" x="20" y="69" width="984" height="61"/>
+                                <string key="text">This is an app that keeps your Zoom links and automatically displays the links of the current period and the next period in school days. To use it, you just have to copy the Zoom URLs from Canvas and paste them into their corresponding blocks, and then go to Today View (or widgets if you're using iOS &gt;14), and add this app as a widget.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Don't change unless you know what you're doing)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsG-RY-TL6">
+                                <rect key="frame" x="20" y="179" width="984" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Calendar URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcc-H1-J0j">
-                                <rect key="frame" x="20" y="148.5" width="984" height="21"/>
+                                <rect key="frame" x="20" y="205" width="984" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejC-DW-AsL">
-                                <rect key="frame" x="20" y="169.5" width="937" height="34"/>
+                                <rect key="frame" x="20" y="226" width="937" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -167,13 +174,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regex Pattern for Day Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7B8-mg-bOx">
-                                <rect key="frame" x="20" y="213.5" width="984" height="21"/>
+                                <rect key="frame" x="20" y="270" width="984" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-7v-kqx">
-                                <rect key="frame" x="20" y="234.5" width="937" height="34"/>
+                                <rect key="frame" x="20" y="291" width="937" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -181,7 +188,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gas-La-eo2">
-                                <rect key="frame" x="965" y="237" width="39" height="30"/>
+                                <rect key="frame" x="965" y="293.5" width="39" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
@@ -189,7 +196,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UG-f9-d0l">
-                                <rect key="frame" x="965" y="172" width="39" height="30"/>
+                                <rect key="frame" x="965" y="228.5" width="39" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
@@ -200,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="brs-yi-MGR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LsG-RY-TL6" firstAttribute="top" secondItem="bh0-Mm-5F6" secondAttribute="bottom" id="2bF-r4-LcY"/>
                             <constraint firstItem="Fy7-7v-kqx" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="2jT-2b-0tr"/>
                             <constraint firstItem="b1q-t3-SUz" firstAttribute="top" secondItem="AxB-de-38e" secondAttribute="bottom" constant="8" symbolic="YES" id="62a-FK-jDW"/>
                             <constraint firstItem="Fy7-7v-kqx" firstAttribute="top" secondItem="7B8-mg-bOx" secondAttribute="bottom" id="7Ki-AO-hiW"/>
@@ -219,12 +227,14 @@
                             <constraint firstItem="AxB-de-38e" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="V23-6p-BDQ"/>
                             <constraint firstItem="bh0-Mm-5F6" firstAttribute="top" secondItem="b1q-t3-SUz" secondAttribute="bottom" constant="20" id="WYJ-3y-0Sn"/>
                             <constraint firstItem="b1q-t3-SUz" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="XG9-hh-GSS"/>
+                            <constraint firstItem="brs-yi-MGR" firstAttribute="trailing" secondItem="LsG-RY-TL6" secondAttribute="trailing" constant="20" id="ZRf-Oo-x6d"/>
                             <constraint firstItem="0UG-f9-d0l" firstAttribute="top" secondItem="Pcc-H1-J0j" secondAttribute="bottom" constant="2.5" id="bf5-ma-Yh9"/>
+                            <constraint firstItem="LsG-RY-TL6" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="egr-Ov-C1f"/>
                             <constraint firstItem="brs-yi-MGR" firstAttribute="trailing" secondItem="bh0-Mm-5F6" secondAttribute="trailing" constant="20" id="hXD-IV-2yE"/>
                             <constraint firstItem="0UG-f9-d0l" firstAttribute="leading" secondItem="ejC-DW-AsL" secondAttribute="trailing" constant="8" symbolic="YES" id="klA-Fe-tZG"/>
                             <constraint firstItem="ejC-DW-AsL" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="pce-nu-xiV"/>
+                            <constraint firstItem="Pcc-H1-J0j" firstAttribute="top" secondItem="LsG-RY-TL6" secondAttribute="bottom" constant="8" symbolic="YES" id="raK-eh-6wb"/>
                             <constraint firstItem="AxB-de-38e" firstAttribute="top" secondItem="brs-yi-MGR" secondAttribute="top" constant="20" id="zBN-cG-5P0"/>
-                            <constraint firstItem="Pcc-H1-J0j" firstAttribute="top" secondItem="bh0-Mm-5F6" secondAttribute="bottom" constant="10" id="zhT-uQ-RYP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="square.stack.3d.up.fill" catalog="system" selectedImage="square.stack.3d.up.fill" id="ZZt-Hn-WOt"/>
@@ -243,6 +253,9 @@
         <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
