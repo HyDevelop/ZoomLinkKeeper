@@ -81,6 +81,14 @@ class TodayViewController: UIViewController, NCWidgetProviding
     {
         // Update title text
         label.text = "Day " + String(day) + " (" + blocks.joined(separator: "") + ")";
+        
+        // Find current block index
+        let time = Time()
+        var block = -1
+        for i in stride(from: 4, through: 0, by: -1)
+        {
+            if (time > periodTimes[i]) { block = i; break }
+        }
     }
     
     /// Get the string of today's date
