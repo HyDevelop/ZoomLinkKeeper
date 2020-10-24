@@ -50,6 +50,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
     @IBOutlet weak var nextBlockButton: UIButton!
     
     let periodTimes = [Time(8,20), Time(9,30), Time(10,35), Time(12,29), Time(13,34)]
+    let endTimes = [Time(9,20), Time(10,25), Time(12,19), Time(13,24), Time(14,29)]
     
     /// Today's date and day in the schedule rotation
     var todaysDate: String = ""
