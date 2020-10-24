@@ -15,11 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // Override point for customization after application launch.
         
         // Initialize settings on fist launch
-        if MyConstants.prefs.string(forKey: "calendar-url") == nil
-        {
-            MyConstants.prefs.setValue("calendar-url", forKey: MyConstants.defaultCalendarUrl)
-            MyConstants.prefs.setValue("regex", forKey: MyConstants.defaultRegex)
-        }
+        MyConstants.prefs.register(defaults: [
+            "calendar-url": MyConstants.defaultCalendarUrl,
+            "regex": MyConstants.defaultRegex
+        ])
         
         return true
     }
