@@ -94,9 +94,24 @@ class TodayViewController: UIViewController, NCWidgetProviding
     /// Perform any setup necessary in order to update the view.
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void))
     {
-        // If the day haven't updated in a day yet
-        if (todaysDate != getTodayDate()) { getHttp() }
-        else { update() }
+        // Detect weekends
+        let weekday = Calendar.current.component(.weekday, from: Date())
+        if (weekday == 1 || weekday == 7)
+        {
+            label.text = "Enjoy your " + (weekday == 7 ? "Saturday" : "Sunday") + "!"
+            currentBlockLabel.text = "Gaming"
+            currentBlockTime.text = "0:01-23:58"
+            currentBlockButton.isEnabled = false
+            nextBlockLabel.text = "Sleep"
+            nextBlockTime.text = "23:58-23:59"
+            currentBlockButton.isEnabled = false
+        }
+        else
+        {
+            // If the day haven't updated in a day yet
+            if (todaysDate != getTodayDate()) { getHttp() }
+            else { update() }
+        }
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
