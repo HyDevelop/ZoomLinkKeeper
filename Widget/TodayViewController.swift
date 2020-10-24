@@ -84,14 +84,14 @@ class TodayViewController: UIViewController, NCWidgetProviding
         
         // Find current block index
         let time = Time()
-        var block = -1
+        var period = -1
         for i in stride(from: 4, through: 0, by: -1)
         {
-            if (time > periodTimes[i]) { block = i; break }
+            if (time > periodTimes[i]) { period = i; break }
         }
         
         // Day haven't started yet
-        if (block == -1)
+        if (period == -1)
         {
             currentBlockLabel.text = "Breakfast?"
             currentBlockTime.text = "-"
@@ -99,10 +99,10 @@ class TodayViewController: UIViewController, NCWidgetProviding
         }
         else
         {
-            assignBlock(block, currentBlockLabel, currentBlockTime, currentBlockButton, "Current Block: ")
+            assignBlock(period, currentBlockLabel, currentBlockTime, currentBlockButton, "Current Block: ")
         }
         
-        if (block == 4)
+        if (period == 4)
         {
             nextBlockLabel.text = "School Ended"
             nextBlockTime.text = "-"
@@ -110,15 +110,15 @@ class TodayViewController: UIViewController, NCWidgetProviding
         }
         else
         {
-            assignBlock(block, nextBlockLabel, nextBlockTime, nextBlockButton, "Next Block: ")
+            assignBlock(period, nextBlockLabel, nextBlockTime, nextBlockButton, "Next Block: ")
         }
     }
     
     // Change one item to a block
-    func assignBlock(_ block: Int, _ label: UILabel, _ time: UILabel, _ button: UIButton, _ prefix: String)
+    func assignBlock(_ period: Int, _ label: UILabel, _ time: UILabel, _ button: UIButton, _ prefix: String)
     {
-        label.text = prefix + blocks[block]
-        time.text = periodTimes[block].description + " - " + endTimes[block].description
+        label.text = prefix + blocks[period]
+        time.text = periodTimes[period].description + " - " + endTimes[period].description
         button.isEnabled = true
     }
     
