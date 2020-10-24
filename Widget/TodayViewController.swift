@@ -57,6 +57,9 @@ class TodayViewController: UIViewController, NCWidgetProviding
     var day: Int = 0
     var blocks: [String] = []
     
+    /// Updated on widgetPerformUpdate()
+    var currentPeriod: Int = 0
+    
     /// Initialize
     override func viewDidLoad()
     {
@@ -89,6 +92,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
         {
             if (time > periodTimes[i]) { period = i; break }
         }
+        currentPeriod = period
         
         // Day haven't started yet
         if (period == -1)
