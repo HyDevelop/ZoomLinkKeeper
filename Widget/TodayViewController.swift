@@ -101,6 +101,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
             
             // Calculate blocks
             let start = (self.day - 1) * 5 % 7
+            self.blocks = []
             for i in 0...5 // Include one period for tomorrow
             {
                 self.blocks.append(String(Character(UnicodeScalar(start + i + 65)!)))
