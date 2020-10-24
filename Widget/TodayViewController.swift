@@ -60,12 +60,6 @@ class TodayViewController: UIViewController, NCWidgetProviding
     /// Updated on widgetPerformUpdate()
     var currentPeriod: Int = 0
     
-    /// Initialize
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-    }
-    
     /// Open zoom links
     @IBAction func currentBlockClick(_ sender: Any) { openUrl(currentPeriod) }
     @IBAction func nextBlockClick(_ sender: Any) { openUrl(currentPeriod + 1) }
