@@ -67,14 +67,8 @@ class TodayViewController: UIViewController, NCWidgetProviding
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void))
     {
         // If the day haven't updated in a day yet
-        if (todaysDate != getTodayDate())
-        {
-            getHttp()
-        }
-        else
-        {
-            update()
-        }
+        if (todaysDate != getTodayDate()) { getHttp() }
+        else { update() }
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
