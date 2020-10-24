@@ -76,12 +76,14 @@ class TodayViewController: UIViewController, NCWidgetProviding
         // Get link
         guard let link = prefs.string(forKey: blocks[period] + " Block") else
         {
+            label.text = "Please setup in the app first :("
             return
         }
         
         // To url
         guard let url = URL(string: link) else
         {
+            label.text = "URL for " + blocks[period] + " failed to parse :("
             return
         }
         
