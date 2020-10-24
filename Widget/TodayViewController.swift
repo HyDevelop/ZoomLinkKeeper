@@ -42,6 +42,12 @@ class TodayViewController: UIViewController, NCWidgetProviding
     let prefs = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var currentBlockLabel: UILabel!
+    @IBOutlet weak var nextBlockLabel: UILabel!
+    @IBOutlet weak var currentBlockTime: UILabel!
+    @IBOutlet weak var nextBlockTime: UILabel!
+    @IBOutlet weak var currentBlockButton: UIButton!
+    @IBOutlet weak var nextBlockButton: UIButton!
     
     let periodTimes = [Time(8,20), Time(9,30), Time(10,35), Time(12,29), Time(13,34)]
     
