@@ -76,27 +76,17 @@ class TodayViewController: UIViewController, NCWidgetProviding
         // Get link
         guard let link = prefs.string(forKey: blocks[period] + " Block") else
         {
-            alert("Zoom links haven't been set yet, you can open the app and input them!")
             return
         }
         
         // To url
         guard let url = URL(string: link) else
         {
-            alert("URL failed to parse, please check if you mistyped it: " + link)
             return
         }
         
         // Open url
         extensionContext?.open(url)
-    }
-    
-    /// Alert that zoom links haven't been set yet.
-    func alert(_ message: String)
-    {
-        let alertController = UIAlertController(title: "Zoom Link Keeper", message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Okay :)", style: .default))
-        self.present(alertController, animated: true, completion: nil)
     }
     
     /// Perform any setup necessary in order to update the view.
