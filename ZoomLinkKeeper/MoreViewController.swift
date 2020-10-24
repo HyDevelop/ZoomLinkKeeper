@@ -9,8 +9,6 @@ import UIKit
 
 class MoreViewController: UIViewController
 {
-    let userDefaults = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
-    
     @IBOutlet weak var calendarUrl: UITextField!
     @IBOutlet weak var regex: UITextField!
     
@@ -22,15 +20,15 @@ class MoreViewController: UIViewController
         super.viewDidLoad()
         
         // Load settings
-        calendarUrl.text = userDefaults.string(forKey: "calendar-url");
-        regex.text       = userDefaults.string(forKey: "regex");
+        calendarUrl.text = MyConstants.prefs.string(forKey: "calendar-url");
+        regex.text       = MyConstants.prefs.string(forKey: "regex");
     }
     
     /// Save settings
     @IBAction func saveSettings(_ sender: Any)
     {
-        userDefaults.setValue(calendarUrl.text, forKey: "calendar-url")
-        userDefaults.setValue(regex.text, forKey: "regex")
+        MyConstants.prefs.setValue(calendarUrl.text, forKey: "calendar-url")
+        MyConstants.prefs.setValue(regex.text, forKey: "regex")
     }
     
     /// Reset data fields

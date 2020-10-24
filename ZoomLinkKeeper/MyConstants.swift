@@ -11,4 +11,5 @@ struct MyConstants
 {
     static let defaultCalendarUrl = "https://www.stjohnsprep.org/page.cfm?p=8267&period=day"
     static let defaultRegex = "(?<=HS - Day )[1-7](?= - )"
+    static let prefs = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
 }

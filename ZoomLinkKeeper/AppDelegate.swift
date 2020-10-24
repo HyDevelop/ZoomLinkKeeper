@@ -10,20 +10,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
-    let userDefaults = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
-    
     func application(_ app: UIApplication, didFinishLaunchingWithOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         // Override point for customization after application launch.
         
         // Initialize settings on fist launch
-        if userDefaults.string(forKey: "calendar-url") == nil
+        if MyConstants.prefs.string(forKey: "calendar-url") == nil
         {
-            userDefaults.setValue("calendar-url", forKey: MyConstants.defaultCalendarUrl)
-            userDefaults.setValue("regex", forKey: MyConstants.defaultRegex)
-        }
-        if userDefaults.string(forKey: "calendar-url") == nil {
-            print("what?")
+            MyConstants.prefs.setValue("calendar-url", forKey: MyConstants.defaultCalendarUrl)
+            MyConstants.prefs.setValue("regex", forKey: MyConstants.defaultRegex)
         }
         
         return true
