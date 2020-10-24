@@ -120,35 +120,34 @@ class TodayViewController: UIViewController, NCWidgetProviding
         currentPeriod = period
         
         // Day haven't started yet
-        if (period == -1)
-        {
-            currentBlockLabel.text = "Breakfast?"
-            currentBlockTime.text = "-"
-            currentBlockButton.isEnabled = false
-        }
-        else
-        {
-            assignBlock(period, currentBlockLabel, currentBlockTime, currentBlockButton, "Current Block: ")
-        }
+        if (period == -1) { setText(true, "Breakfast?", "-", false) }
+        else { assignBlock(true, period, "Current Block: ") }
         
-        if (period == 4)
-        {
-            nextBlockLabel.text = "School Ended"
-            nextBlockTime.text = "-"
-            nextBlockButton.isEnabled = false
-        }
-        else
-        {
-            assignBlock(period, nextBlockLabel, nextBlockTime, nextBlockButton, "Next Block: ")
-        }
+        if (period == 4) { setText(false, "School Ended", "-", false) }
+        else { assignBlock(false, period, "Next Block: ") }
     }
     
     // Change one item to a block
-    func assignBlock(_ period: Int, _ label: UILabel, _ time: UILabel, _ button: UIButton, _ prefix: String)
+    func assignBlock(_ current: Bool, _ period: Int, _ prefix: String)
     {
-        label.text = prefix + blocks[period]
-        time.text = periodTimes[period].description + " - " + endTimes[period].description
-        button.isEnabled = true
+        setText(current, prefix + blocks[period], periodTimes[period].description + " - " + endTimes[period].description, true)
+    }
+    
+    /// Set item text
+    func setText(_ current: Bool, _ label: String, _ time: String, _ buttonEnabled: Bool)
+    {
+        if (current)
+        {
+            currentBlockLabel.text = label
+            currentBlockTime.text = time
+            currentBlockButton.isEnabled = buttonEnabled
+        }
+        else
+        {
+            nextBlockLabel.text = label
+            nextBlockTime.text = time
+            nextBlockButton.isEnabled = buttonEnabled
+        }
     }
     
     /// Get the string of today's date
