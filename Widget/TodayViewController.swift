@@ -82,38 +82,39 @@ class TodayViewController: UIViewController, NCWidgetProviding
     /// Get today's schedule rotation day from Http
     func getHttp()
     {
-        if let url = URL(string: prefs.string(forKey: "calendar-url") ?? "")
-        {
-            do
+        let urlString = prefs.string(forKey: "calendar-url")!
+        let url = URL(string: urlString)!
+        let regex = try! NSRegularExpression(pattern: prefs.string(forKey: "regex")!)
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            // Validate data
+            guard error == nil else { return }
+            guard let data = data else { return }
+            let html = String(data: data, encoding: .utf8)!
+            
+            // Match regex through all characters
+            let match = regex.firstMatch(in: html, options: [], range: NSRange(location: 0, length: html.utf16.count))!
+           
+            // Update the variables
+            self.todaysDate = self.getTodayDate();
+            self.day = Int(html[Range(match.range, in: html)!])! // TODO: Handle errors
+            
+            // Calculate blocks
+            let start = (self.day - 1) * 5 % 7
+            for i in 0...4
             {
-                let regex = try NSRegularExpression(pattern: prefs.string(forKey: "regex")!)
-                
-                let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                    // Valid data
-                    guard let data = data else { return }
-                    let html = String(data: data, encoding: .utf8)!
-                    
-                    // Match regex through all characters
-                    let match = regex.firstMatch(in: html, options: [], range: NSRange(location: 0, length: html.utf16.count))!
-                   
-                    // Update the variables
-                    self.todaysDate = self.getTodayDate();
-                    
-                    // Update view
-                    self.update()
-                }
-                
-                // Actually start the call
-                task.resume()
+                self.blocks.append(String(Character(UnicodeScalar(start + i + 65)!)))
             }
-            catch
+            
+            // Sync thread. This literally took me an hour to debug ;-;
+            DispatchQueue.main.async
             {
-                fatalError("Regex is nil")
+                // Update view
+                self.update()
             }
         }
-        else
-        {
-            fatalError("URL is nil")
-        }
+        
+        // Actually start the call
+        task.resume()
     }
 }
