@@ -45,7 +45,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="saveInput:" destination="bi0-ax-5CZ" eventType="editingDidEnd" id="elq-MC-2KJ"/>
+                                                        <action selector="valueChanged:" destination="bi0-ax-5CZ" eventType="valueChanged" id="IkP-uM-jc9"/>
                                                     </connections>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQX-df-3At">

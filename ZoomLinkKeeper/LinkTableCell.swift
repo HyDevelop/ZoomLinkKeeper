@@ -12,7 +12,7 @@ class LinkTableCell: UITableViewCell
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var input: UITextField!
     
-    @IBAction func saveInput(_ sender: Any)
+    @IBAction func valueChanged(_ sender: Any)
     {
         save()
     }
