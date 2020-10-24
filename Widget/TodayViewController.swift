@@ -106,6 +106,14 @@ class TodayViewController: UIViewController, NCWidgetProviding
         }
     }
     
+    // Change one item to a block
+    func assignBlock(_ block: Int, _ label: UILabel, _ time: UILabel, _ button: UIButton, _ prefix: String)
+    {
+        label.text = prefix + blocks[block]
+        time.text = periodTimes[block].description + " - " + endTimes[block].description
+        button.isEnabled = true
+    }
+    
     /// Get the string of today's date
     func getTodayDate() -> String
     {
