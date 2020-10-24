@@ -68,7 +68,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
     /// Update within a day
     func update()
     {
-        
+        label.text = "Today is day " + String(day) + " (" + blocks.joined(separator: "") + ")";
     }
     
     /// Get the string of today's date
