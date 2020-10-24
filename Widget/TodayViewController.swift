@@ -102,11 +102,10 @@ class TodayViewController: UIViewController, NCWidgetProviding
             // Calculate blocks
             let start = (self.day - 1) * 5 % 7
             self.blocks = []
-            for i in 0...5 // Include one period for tomorrow
+            for i in 0...4
             {
                 self.blocks.append(String(Character(UnicodeScalar(start + i + 65)!)))
             }
-            self.blocks.insert("Z", at: 4) // Z: After school and before tommow's first block
             
             // Sync thread. This literally took me an hour to debug ;-;
             DispatchQueue.main.async
