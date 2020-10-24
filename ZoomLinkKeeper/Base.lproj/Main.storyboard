@@ -52,7 +52,7 @@
                                                     <rect key="frame" x="920" y="41" width="64" height="30"/>
                                                     <state key="normal" title="Paste 🍝"/>
                                                     <connections>
-                                                        <action selector="paste:" destination="bi0-ax-5CZ" eventType="touchUpInside" id="4g0-HN-yVv"/>
+                                                        <action selector="pasta:" destination="bi0-ax-5CZ" eventType="touchUpInside" id="fwz-fF-kq8"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

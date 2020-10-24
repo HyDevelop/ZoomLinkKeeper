@@ -14,11 +14,21 @@ class LinkTableCell: UITableViewCell
     
     @IBAction func saveInput(_ sender: Any)
     {
-        MyConstants.prefs.setValue(input.text, forKey: label.text!)
+        save()
     }
     
-    @IBAction func paste(_ sender: Any)
+    /// Paste text (the method name "paste" conflicts with ObjectiveC's paste:)
+    @IBAction func pasta(_ sender: Any)
     {
-        
+        if let clip = UIPasteboard.general.string
+        {
+            input.text = clip
+            save()
+        }
+    }
+    
+    func save()
+    {
+        MyConstants.prefs.setValue(input.text, forKey: label.text!)
     }
 }
