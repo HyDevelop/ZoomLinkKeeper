@@ -106,6 +106,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
             {
                 self.blocks.append(String(Character(UnicodeScalar(start + i + 65)!)))
             }
+            self.blocks.insert("Z", at: 4) // Z: After school and before tommow's first block
             
             // Sync thread. This literally took me an hour to debug ;-;
             DispatchQueue.main.async
