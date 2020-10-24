@@ -12,8 +12,15 @@ class LinkTableCell: UITableViewCell
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var input: UITextField!
     
-    @IBAction func valueChanged(_ sender: Any)
+    @IBAction func save(_ sender: Any)
     {
+        // TODO: Better clear
+        save()
+    }
+    
+    @IBAction func clear(_ sender: Any)
+    {
+        input.text = ""
         save()
     }
     
