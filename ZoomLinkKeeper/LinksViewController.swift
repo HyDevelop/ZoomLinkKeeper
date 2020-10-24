@@ -38,6 +38,12 @@ class LinksViewController: UIViewController
             
             cell.label.text = String(Character(UnicodeScalar(i.item + 65)!)) + " Block"
             
+            // Read config
+            if let url = MyConstants.prefs.string(forKey: cell.label.text!)
+            {
+                cell.input.text = url
+            }
+            
             return cell;
         }
     }
