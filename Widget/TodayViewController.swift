@@ -172,7 +172,15 @@ class TodayViewController: UIViewController, NCWidgetProviding
             let html = String(data: data, encoding: .utf8)!
             
             // Match regex through all characters
-            let match = regex.firstMatch(in: html, options: [], range: NSRange(location: 0, length: html.utf16.count))!
+            guard let match = regex.firstMatch(in: html, options: [], range: NSRange(location: 0, length: html.utf16.count)) else
+            {
+                // No match, possibly it's a day off
+                DispatchQueue.main.async
+                {
+                    self.label.text = "404, might be a day off?"
+                }
+                return
+            }
            
             // Update the variables
             self.todaysDate = self.getTodayDate();
