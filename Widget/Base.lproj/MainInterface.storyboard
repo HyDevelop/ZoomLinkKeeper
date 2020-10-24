@@ -100,10 +100,10 @@
                         <outlet property="currentBlockButton" destination="CLX-zh-ST3" id="dOk-w7-jdh"/>
                         <outlet property="currentBlockLabel" destination="29S-dv-Byu" id="yBG-Li-wfX"/>
                         <outlet property="currentBlockTime" destination="xp7-Wc-yx4" id="Ilu-U9-b6L"/>
-                        <outlet property="label" destination="GcN-lo-r42" id="JMI-Xb-mZ5"/>
                         <outlet property="nextBlockButton" destination="OMX-iD-I1z" id="Hyv-7v-Q3a"/>
                         <outlet property="nextBlockLabel" destination="TDh-4H-iHv" id="z1x-lB-QDN"/>
                         <outlet property="nextBlockTime" destination="vjF-9c-0Dd" id="s6V-fT-nTJ"/>
+                        <outlet property="titleLabel" destination="GcN-lo-r42" id="JMI-Xb-mZ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

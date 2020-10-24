@@ -41,7 +41,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
 {
     let prefs = UserDefaults(suiteName: "group.org.hydev.zoomlink")!
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var currentBlockLabel: UILabel!
     @IBOutlet weak var nextBlockLabel: UILabel!
     @IBOutlet weak var currentBlockTime: UILabel!
@@ -76,14 +76,14 @@ class TodayViewController: UIViewController, NCWidgetProviding
         // Get link
         guard let link = prefs.string(forKey: blocks[period] + " Block") else
         {
-            label.text = "Please setup in the app first :("
+            titleLabel.text = "Please setup in the app first :("
             return
         }
         
         // To url
         guard let url = URL(string: link) else
         {
-            label.text = "URL for " + blocks[period] + " failed to parse :("
+            titleLabel.text = "URL for " + blocks[period] + " failed to parse :("
             return
         }
         
@@ -98,7 +98,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
         let weekday = Calendar.current.component(.weekday, from: Date())
         if (weekday == 1 || weekday == 7)
         {
-            label.text = "Enjoy your " + (weekday == 7 ? "Saturday" : "Sunday") + "!"
+            titleLabel.text = "Enjoy your " + (weekday == 7 ? "Saturday" : "Sunday") + "!"
             setText(true, "-", "0:00-0:00", false)
             setText(false, "-", "0:00-0:00", false)
         }
@@ -119,7 +119,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
     func update()
     {
         // Update title text
-        label.text = "Day " + String(day) + " (" + blocks.joined(separator: "") + ")";
+        titleLabel.text = "Day " + String(day) + " (" + blocks.joined(separator: "") + ")";
         
         // Find current block index
         let time = Time()
@@ -188,7 +188,7 @@ class TodayViewController: UIViewController, NCWidgetProviding
                 // No match, possibly it's a day off
                 DispatchQueue.main.async
                 {
-                    self.label.text = "404, might be a day off?"
+                    self.titleLabel.text = "404, might be a day off?"
                 }
                 return
             }
