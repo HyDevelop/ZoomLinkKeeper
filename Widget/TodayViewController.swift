@@ -66,14 +66,37 @@ class TodayViewController: UIViewController, NCWidgetProviding
         super.viewDidLoad()
     }
     
-    @IBAction func currentBlockClick(_ sender: Any)
+    /// Open zoom links
+    @IBAction func currentBlockClick(_ sender: Any) { openUrl(currentPeriod) }
+    @IBAction func nextBlockClick(_ sender: Any) { openUrl(currentPeriod + 1) }
+    
+    /// Open the zoom link for a period
+    func openUrl(_ period: Int)
     {
+        // Get link
+        guard let link = prefs.string(forKey: blocks[period] + " Block") else
+        {
+            alert("Zoom links haven't been set yet, you can open the app and input them!")
+            return
+        }
         
+        // To url
+        guard let url = URL(string: link) else
+        {
+            alert("URL failed to parse, please check if you mistyped it: " + link)
+            return
+        }
+        
+        // Open url
+        extensionContext?.open(url)
     }
     
-    @IBAction func nextBlockClick(_ sender: Any)
+    /// Alert that zoom links haven't been set yet.
+    func alert(_ message: String)
     {
-        
+        let alertController = UIAlertController(title: "Zoom Link Keeper", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay :)", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     /// Perform any setup necessary in order to update the view.
