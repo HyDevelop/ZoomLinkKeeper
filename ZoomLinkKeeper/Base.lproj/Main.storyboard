@@ -41,21 +41,30 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Copy Zoom link from Canvas..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDP-pj-d3p">
-                                                    <rect key="frame" x="0.0" y="39" width="984" height="34"/>
+                                                    <rect key="frame" x="0.0" y="39" width="912" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="saveInput:" destination="bi0-ax-5CZ" eventType="editingDidEnd" id="elq-MC-2KJ"/>
                                                     </connections>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQX-df-3At">
+                                                    <rect key="frame" x="920" y="41" width="64" height="30"/>
+                                                    <state key="normal" title="Paste 🍝"/>
+                                                    <connections>
+                                                        <action selector="paste:" destination="bi0-ax-5CZ" eventType="touchUpInside" id="4g0-HN-yVv"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="dDP-pj-d3p" secondAttribute="trailing" id="3ZY-oO-5cz"/>
+                                                <constraint firstAttribute="trailing" secondItem="LQX-df-3At" secondAttribute="trailing" id="2GV-mn-B6h"/>
                                                 <constraint firstAttribute="trailing" secondItem="BiX-lu-1lN" secondAttribute="trailing" id="Ks3-ML-emx"/>
+                                                <constraint firstItem="LQX-df-3At" firstAttribute="top" secondItem="BiX-lu-1lN" secondAttribute="bottom" constant="10" id="Thq-Ro-lPD"/>
                                                 <constraint firstItem="dDP-pj-d3p" firstAttribute="top" secondItem="BiX-lu-1lN" secondAttribute="bottom" constant="8" symbolic="YES" id="aD4-0h-mEK"/>
                                                 <constraint firstItem="dDP-pj-d3p" firstAttribute="leading" secondItem="EXi-Lt-gc8" secondAttribute="leading" id="bST-J5-7qu"/>
                                                 <constraint firstItem="BiX-lu-1lN" firstAttribute="top" secondItem="EXi-Lt-gc8" secondAttribute="top" constant="10" id="if7-1k-U57"/>
                                                 <constraint firstItem="BiX-lu-1lN" firstAttribute="leading" secondItem="EXi-Lt-gc8" secondAttribute="leading" id="kEE-Eh-geA"/>
+                                                <constraint firstItem="LQX-df-3At" firstAttribute="leading" secondItem="dDP-pj-d3p" secondAttribute="trailing" constant="8" symbolic="YES" id="naI-R3-hg5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

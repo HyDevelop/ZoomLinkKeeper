@@ -16,4 +16,9 @@ class LinkTableCell: UITableViewCell
     {
         MyConstants.prefs.setValue(input.text, forKey: label.text!)
     }
+    
+    @IBAction func paste(_ sender: Any)
+    {
+        
+    }
 }
