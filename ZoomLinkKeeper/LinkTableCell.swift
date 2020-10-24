@@ -29,6 +29,13 @@ class LinkTableCell: UITableViewCell
     
     func save()
     {
-        MyConstants.prefs.setValue(input.text, forKey: label.text!)
+        if (input.text == nil || input.text!.isEmpty)
+        {
+            MyConstants.prefs.removeObject(forKey: label.text!)
+        }
+        else
+        {
+            MyConstants.prefs.setValue(input.text, forKey: label.text!)
+        }
     }
 }
