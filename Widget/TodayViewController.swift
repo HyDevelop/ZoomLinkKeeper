@@ -89,6 +89,21 @@ class TodayViewController: UIViewController, NCWidgetProviding
         {
             if (time > periodTimes[i]) { block = i; break }
         }
+        
+        // Day haven't started yet
+        if (block == -1)
+        {
+            currentBlockLabel.text = "Breakfast?"
+            currentBlockTime.text = "-"
+            currentBlockButton.isEnabled = false
+        }
+        
+        if (block == 4)
+        {
+            nextBlockLabel.text = "School Ended"
+            nextBlockTime.text = "-"
+            nextBlockButton.isEnabled = false
+        }
     }
     
     /// Get the string of today's date
