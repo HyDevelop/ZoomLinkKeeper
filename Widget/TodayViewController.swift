@@ -99,12 +99,8 @@ class TodayViewController: UIViewController, NCWidgetProviding
         if (weekday == 1 || weekday == 7)
         {
             label.text = "Enjoy your " + (weekday == 7 ? "Saturday" : "Sunday") + "!"
-            currentBlockLabel.text = "Gaming"
-            currentBlockTime.text = "0:01-23:58"
-            currentBlockButton.isEnabled = false
-            nextBlockLabel.text = "Sleep"
-            nextBlockTime.text = "23:58-23:59"
-            currentBlockButton.isEnabled = false
+            setText(true, "-", "0:00-0:00", false)
+            setText(false, "-", "0:00-0:00", false)
         }
         else
         {
