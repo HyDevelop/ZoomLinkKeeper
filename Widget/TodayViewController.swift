@@ -30,6 +30,11 @@ class Time
     {
         return a.hour > b.hour || (a.hour == b.hour && a.minutes > b.minutes)
     }
+    
+    public var description: String
+    {
+        return String(hour) + ":" + String(minutes)
+    }
 }
 
 class TodayViewController: UIViewController, NCWidgetProviding
