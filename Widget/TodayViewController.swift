@@ -119,18 +119,18 @@ class TodayViewController: UIViewController, NCWidgetProviding
         }
         currentPeriod = period
         
+        // Function: change one item to a block
+        func assignBlock(_ current: Bool, _ prefix: String)
+        {
+            setText(current, prefix + blocks[period], periodTimes[period].description + " - " + endTimes[period].description, true)
+        }
+        
         // Day haven't started yet
         if (period == -1) { setText(true, "Breakfast?", "-", false) }
-        else { assignBlock(true, period, "Current Block: ") }
+        else { assignBlock(true, "Current Block: ") }
         
         if (period == 4) { setText(false, "School Ended", "-", false) }
-        else { assignBlock(false, period, "Next Block: ") }
-    }
-    
-    // Change one item to a block
-    func assignBlock(_ current: Bool, _ period: Int, _ prefix: String)
-    {
-        setText(current, prefix + blocks[period], periodTimes[period].description + " - " + endTimes[period].description, true)
+        else { assignBlock(false, "Next Block: ") }
     }
     
     /// Set item text
