@@ -127,6 +127,8 @@ class TodayViewController: UIViewController, NCWidgetProviding
         // Function: change one item to a block
         func assignBlock(_ current: Bool, _ prefix: String)
         {
+            var period = period
+            if (!current) { period += 1 }
             setText(current, prefix + blocks[period], periodTimes[period].description + " - " + endTimes[period].description, true)
         }
         
