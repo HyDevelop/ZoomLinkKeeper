@@ -6,7 +6,7 @@ and then go to Today View (or Widgets if you're using iOS >14), and enable the w
 
 ## Screenshots
 
-
+![widget](https://i.imgur.com/MK3RvkN.jpg)
 
 
 
