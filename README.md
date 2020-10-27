@@ -9,4 +9,4 @@ and then go to Today View (or Widgets if you're using iOS >14), and enable the w
 ![widget](https://i.imgur.com/MK3RvkN.jpg)
 
 
-
+![setup interface](https://i.imgur.com/A5xr169.jpg)
