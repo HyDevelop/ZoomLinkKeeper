@@ -151,32 +151,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Advanced Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-Mm-5F6">
-                                <rect key="frame" x="20" y="150" width="984" height="29"/>
+                                <rect key="frame" x="20" y="180" width="984" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-t3-SUz">
                                 <rect key="frame" x="20" y="69" width="984" height="61"/>
-                                <string key="text">This is an app that keeps your Zoom links and automatically displays the links of the current period and the next period in school days. To use it, you just have to copy the Zoom URLs from Canvas and paste them into their corresponding blocks, and then go to Today View (or widgets if you're using iOS &gt;14), and add this app as a widget.</string>
+                                <string key="text">This is an app that keeps the Zoom links and automatically displays the links of the current period and the next period for SJP students. To use it, just copy the Zoom URLs from various pages on Canvas and paste them into their corresponding blocks, and then go to Today View (or Widgets if you're using iOS &gt;14), and enable the widget.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Don't change unless you know what you're doing)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsG-RY-TL6">
-                                <rect key="frame" x="20" y="179" width="984" height="18"/>
+                                <rect key="frame" x="20" y="209" width="984" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Calendar URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcc-H1-J0j">
-                                <rect key="frame" x="20" y="205" width="984" height="21"/>
+                                <rect key="frame" x="20" y="235" width="984" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejC-DW-AsL">
-                                <rect key="frame" x="20" y="226" width="937" height="34"/>
+                                <rect key="frame" x="20" y="256" width="937" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -184,13 +184,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regex Pattern for Day Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7B8-mg-bOx">
-                                <rect key="frame" x="20" y="270" width="984" height="21"/>
+                                <rect key="frame" x="20" y="300" width="984" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-7v-kqx">
-                                <rect key="frame" x="20" y="291" width="937" height="34"/>
+                                <rect key="frame" x="20" y="321" width="937" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -198,7 +198,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gas-La-eo2">
-                                <rect key="frame" x="965" y="293.5" width="39" height="30"/>
+                                <rect key="frame" x="965" y="323.5" width="39" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
@@ -206,7 +206,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UG-f9-d0l">
-                                <rect key="frame" x="965" y="228.5" width="39" height="30"/>
+                                <rect key="frame" x="965" y="258.5" width="39" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
@@ -235,7 +235,7 @@
                             <constraint firstItem="gas-La-eo2" firstAttribute="leading" secondItem="Fy7-7v-kqx" secondAttribute="trailing" constant="8" symbolic="YES" id="PeL-YB-vBO"/>
                             <constraint firstItem="brs-yi-MGR" firstAttribute="trailing" secondItem="AxB-de-38e" secondAttribute="trailing" constant="20" id="RwI-J7-rYq"/>
                             <constraint firstItem="AxB-de-38e" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="V23-6p-BDQ"/>
-                            <constraint firstItem="bh0-Mm-5F6" firstAttribute="top" secondItem="b1q-t3-SUz" secondAttribute="bottom" constant="20" id="WYJ-3y-0Sn"/>
+                            <constraint firstItem="bh0-Mm-5F6" firstAttribute="top" secondItem="b1q-t3-SUz" secondAttribute="bottom" constant="50" id="WYJ-3y-0Sn"/>
                             <constraint firstItem="b1q-t3-SUz" firstAttribute="leading" secondItem="brs-yi-MGR" secondAttribute="leading" constant="20" id="XG9-hh-GSS"/>
                             <constraint firstItem="brs-yi-MGR" firstAttribute="trailing" secondItem="LsG-RY-TL6" secondAttribute="trailing" constant="20" id="ZRf-Oo-x6d"/>
                             <constraint firstItem="0UG-f9-d0l" firstAttribute="top" secondItem="Pcc-H1-J0j" secondAttribute="bottom" constant="2.5" id="bf5-ma-Yh9"/>
