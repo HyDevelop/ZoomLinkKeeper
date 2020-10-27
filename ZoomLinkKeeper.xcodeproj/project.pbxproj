@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4F31607725431DB8007FFCF0 /* MyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31607625431DB8007FFCF0 /* MyConstants.swift */; };
 		4F31607F254339C2007FFCF0 /* LinkTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31607E254339C2007FFCF0 /* LinkTableCell.swift */; };
 		4F31608D254345F2007FFCF0 /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31608C254345F2007FFCF0 /* LinksViewController.swift */; };
-		4F394F6125436D3F0038C6A3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F394F6025436D3F0038C6A3 /* NotificationCenter.framework */; };
+		4F394F6125436D3F0038C6A3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F394F6025436D3F0038C6A3 /* NotificationCenter.framework */; platformFilter = ios; };
 		4F394F6425436D3F0038C6A3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F394F6325436D3F0038C6A3 /* TodayViewController.swift */; };
 		4F394F6725436D3F0038C6A3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F394F6525436D3F0038C6A3 /* MainInterface.storyboard */; };
-		4F394F6B25436D3F0038C6A3 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F394F5E25436D3F0038C6A3 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F394F6B25436D3F0038C6A3 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F394F5E25436D3F0038C6A3 /* Widget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F5571B12544C60E00A209B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5571B02544C60E00A209B9 /* AppDelegate.swift */; };
+		4F5571B32544C60E00A209B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5571B22544C60E00A209B9 /* ViewController.swift */; };
+		4F5571B52544C60F00A209B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5571B42544C60F00A209B9 /* Assets.xcassets */; };
+		4F5571B82544C60F00A209B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5571B62544C60F00A209B9 /* Main.storyboard */; };
 		4FC377792541F86600B6C64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC377782541F86600B6C64B /* AppDelegate.swift */; };
 		4FC3777B2541F86600B6C64B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777A2541F86600B6C64B /* SceneDelegate.swift */; };
 		4FC3777D2541F86600B6C64B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3777C2541F86600B6C64B /* MoreViewController.swift */; };
@@ -44,6 +48,16 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F5571D82546F91A00A209B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +71,13 @@
 		4F394F6325436D3F0038C6A3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4F394F6625436D3F0038C6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4F394F6825436D3F0038C6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5571AE2544C60E00A209B9 /* ZoomLinkKeeper.Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomLinkKeeper.Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5571B02544C60E00A209B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F5571B22544C60E00A209B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F5571B42544C60F00A209B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F5571B72544C60F00A209B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F5571B92544C60F00A209B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5571BA2544C60F00A209B9 /* ZoomLinkKeeper_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomLinkKeeper_Mac.entitlements; sourceTree = "<group>"; };
 		4FC377752541F86600B6C64B /* ZoomLinkKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomLinkKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC377782541F86600B6C64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC3777A2541F86600B6C64B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +94,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F394F6125436D3F0038C6A3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5571AB2544C60E00A209B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,11 +133,25 @@
 			path = Widget;
 			sourceTree = "<group>";
 		};
+		4F5571AF2544C60E00A209B9 /* ZoomLinkKeeper.Mac */ = {
+			isa = PBXGroup;
+			children = (
+				4F5571B02544C60E00A209B9 /* AppDelegate.swift */,
+				4F5571B22544C60E00A209B9 /* ViewController.swift */,
+				4F5571B42544C60F00A209B9 /* Assets.xcassets */,
+				4F5571B62544C60F00A209B9 /* Main.storyboard */,
+				4F5571B92544C60F00A209B9 /* Info.plist */,
+				4F5571BA2544C60F00A209B9 /* ZoomLinkKeeper_Mac.entitlements */,
+			);
+			path = ZoomLinkKeeper.Mac;
+			sourceTree = "<group>";
+		};
 		4FC3776C2541F86600B6C64B = {
 			isa = PBXGroup;
 			children = (
 				4FC377772541F86600B6C64B /* ZoomLinkKeeper */,
 				4F394F6225436D3F0038C6A3 /* Widget */,
+				4F5571AF2544C60E00A209B9 /* ZoomLinkKeeper.Mac */,
 				4F394F5F25436D3F0038C6A3 /* Frameworks */,
 				4FC377762541F86600B6C64B /* Products */,
 			);
@@ -120,6 +162,7 @@
 			children = (
 				4FC377752541F86600B6C64B /* ZoomLinkKeeper.app */,
 				4F394F5E25436D3F0038C6A3 /* Widget.appex */,
+				4F5571AE2544C60E00A209B9 /* ZoomLinkKeeper.Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +205,23 @@
 			productReference = 4F394F5E25436D3F0038C6A3 /* Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		4F5571AD2544C60E00A209B9 /* ZoomLinkKeeper.Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5571BB2544C60F00A209B9 /* Build configuration list for PBXNativeTarget "ZoomLinkKeeper.Mac" */;
+			buildPhases = (
+				4F5571AA2544C60E00A209B9 /* Sources */,
+				4F5571AB2544C60E00A209B9 /* Frameworks */,
+				4F5571AC2544C60E00A209B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomLinkKeeper.Mac;
+			productName = ZoomLinkKeeper.Mac;
+			productReference = 4F5571AE2544C60E00A209B9 /* ZoomLinkKeeper.Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4FC377742541F86600B6C64B /* ZoomLinkKeeper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FC377892541F86800B6C64B /* Build configuration list for PBXNativeTarget "ZoomLinkKeeper" */;
@@ -170,6 +230,7 @@
 				4FC377722541F86600B6C64B /* Frameworks */,
 				4FC377732541F86600B6C64B /* Resources */,
 				4F394F6C25436D3F0038C6A3 /* Embed App Extensions */,
+				4F5571D82546F91A00A209B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,11 +248,14 @@
 		4FC3776D2541F86600B6C64B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					4F394F5D25436D3F0038C6A3 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					4F5571AD2544C60E00A209B9 = {
+						CreatedOnToolsVersion = 12.1;
 					};
 					4FC377742541F86600B6C64B = {
 						CreatedOnToolsVersion = 12.1;
@@ -213,6 +277,7 @@
 			targets = (
 				4FC377742541F86600B6C64B /* ZoomLinkKeeper */,
 				4F394F5D25436D3F0038C6A3 /* Widget */,
+				4F5571AD2544C60E00A209B9 /* ZoomLinkKeeper.Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +288,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F394F6725436D3F0038C6A3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5571AC2544C60E00A209B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5571B52544C60F00A209B9 /* Assets.xcassets in Resources */,
+				4F5571B82544C60F00A209B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +321,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F5571AA2544C60E00A209B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5571B32544C60E00A209B9 /* ViewController.swift in Sources */,
+				4F5571B12544C60E00A209B9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FC377712541F86600B6C64B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +348,7 @@
 /* Begin PBXTargetDependency section */
 		4F394F6A25436D3F0038C6A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4F394F5D25436D3F0038C6A3 /* Widget */;
 			targetProxy = 4F394F6925436D3F0038C6A3 /* PBXContainerItemProxy */;
 		};
@@ -277,6 +361,14 @@
 				4F394F6625436D3F0038C6A3 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		4F5571B62544C60F00A209B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F5571B72544C60F00A209B9 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		4FC3777E2541F86600B6C64B /* Main.storyboard */ = {
@@ -314,6 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,8 +428,55 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F5571BC2544C60F00A209B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomLinkKeeper.Mac/ZoomLinkKeeper_Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JJNC9EQDFU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ZoomLinkKeeper.Mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.hydev.ZoomLinkKeeper-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4F5571BD2544C60F00A209B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomLinkKeeper.Mac/ZoomLinkKeeper_Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JJNC9EQDFU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ZoomLinkKeeper.Mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.hydev.ZoomLinkKeeper-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -473,8 +613,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -495,8 +636,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.hydev.zoomlink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -508,6 +650,15 @@
 			buildConfigurations = (
 				4F394F6D25436D3F0038C6A3 /* Debug */,
 				4F394F6E25436D3F0038C6A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5571BB2544C60F00A209B9 /* Build configuration list for PBXNativeTarget "ZoomLinkKeeper.Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5571BC2544C60F00A209B9 /* Debug */,
+				4F5571BD2544C60F00A209B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
